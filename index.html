@@ -4,30 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Proyecto Final #YoProgramo - Portfolio Gonzalez Julio</title>
 
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <div>
-    <div id="header">
-      <h1>Hola mundo TOP
-         without borders</h1>
-      <img src="/images/face.jpg" alt="Gonzalez Julio">
-      <img src="/images/walltop.jpg" alt="WallpaperTop">
-    </div>
+  <header class="hero">
+    <nav class="nav container">
+      
+      <div class="nav__logo">
+        <h2 class="nav__title">Gonzalez Julio</h2>
+      </div>
+      
+      <ul class="nav__link nav__link--menu">
+        <li class="nav__items">
+          <a href=# class="nav__links"><img src="./images/face.svg" class="nav__imgicon"></a>
+        </li>
+        <li class="nav__items">
+          <a href=# class="nav__links"><img src="./images/insta.svg" class="nav__imgicon"></a>
+        </li>
+        <li class="nav__items">
+          <a href=# class="nav__links"><img src="./images/linkin.svg" class="nav__imgicon"></a>
+        </li>
+        <li class="nav__items">
+          <button class="nav__loginbutton">Login</button>
+        </li>
+      </ul>
+      
+      
+
+      <div class="nav__menu">
+        <img src="./images/menu.svg" class="nav__img">
+      </div>
     
-    <div id="experience">
-      <h1>Hola mundo MID</h1>
-    </div>
-    
-    <div id="contact-site">
-      <h1 id="amigo">Hola mundo BOT prueba</h1>
-    </div>
-  </div>
+    </nav>
+  </header>
 </body>
 
 </html>
