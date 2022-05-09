@@ -36,16 +36,41 @@
     </nav>
   </header>
   
+  
+  <script>
+    function changeText(){
+      
+      document.getElementById("parrafo").innerHTML = "testings";
+    }
+  </script>
+  
   <main class="main">
-    <section class="top__main">
-      <img src="./images/face.jpg" class="top__img__profile">
-      <h2 class="top__name">Julio Gonzalez</h2>
-      <p class="top__introduction">
-        Responsable, facilidad de aprendizaje, trabajo en equipo y eficiencia para el cumplimiento de objetivos.
-        Actualmente autodidacta en programación de software y también en desarrollo de videojuegos, con conocimientos en tecnologías como C# - JAVA - C++, entre otros.
-      </p>
-    </section>
-    
+    <div class="top__main__center">
+      <img src="./images/walltop.jpg" class="top__img__wallpaper">
+      
+      <section class="top__main">
+        
+        <div class="pic__comp">
+          <img src="./images/face.jpg" class="top__img__profile">
+          <img src="./images/edit.svg" class="top__img__edit">
+        </div>
+        
+        <div class="name__comp">
+          <h2 class="top__name">Julio Gonzalez</h2>
+          <img src="./images/edit.svg" class="top__img__edit">
+        </div>
+        
+        <div class="introduction__comp">
+          <p class="top__introduction" id="parrafo">
+            Autodidacta en desarrolo software en general como para videojuegos, con conocimientos en tecnologías como C# - JAVA - C++, entre otros.
+          </p>
+          <img src="./images/edit.svg" class="top__img__edit" onclick="changeText()">
+        </div>
+        
+      </section>
+   </div> 
+
+   
     
 
   </main>
