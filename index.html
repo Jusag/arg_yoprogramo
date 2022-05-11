@@ -38,9 +38,19 @@
   
   
   <script>
-    function changeText(){
-      
-      document.getElementById("parrafo").innerHTML = "testings";
+    function changeText(id__value){
+      let x = document.getElementById(id__value).children[0];
+      if(x == null){
+        x = document.createElement("INPUT");
+        document.getElementById(id__value).appendChild(x);
+        x.size = 9;
+        x.maxlength = "5";
+        x.addEventListener('keypress', function (e){
+          if (e.key === 'Enter') {
+            document.getElementById(id__value).innerHTML = x.value;
+          }
+        });
+      }
     }
   </script>
   
@@ -52,19 +62,19 @@
         
         <div class="pic__comp">
           <img src="./images/face.jpg" class="top__img__profile">
-          <img src="./images/edit.svg" class="top__img__edit">
+          <img src="./images/edit.svg" class="top__img__edit editable__element">
         </div>
         
         <div class="name__comp">
-          <h2 class="top__name">Julio Gonzalez</h2>
-          <img src="./images/edit.svg" class="top__img__edit">
+          <h2 class="top__name" id="nombre">Julio Gonzalez</h2>
+          <img src="./images/edit.svg" class="top__img__edit editable__element" onclick=changeText("nombre")>
         </div>
         
         <div class="introduction__comp">
           <p class="top__introduction" id="parrafo">
-            Autodidacta en desarrolo software en general como para videojuegos, con conocimientos en tecnologías como C# - JAVA - C++, entre otros.
+            Autodidacta en desarrollo so65465465HDFGOPHIDPOFGIHPO´DFGIHPOÍPODF´GIHOP´DFGIHOPIFDPOHIGOPF6465456465465464654ftware en general como para videojuegos, con conocimientos en tecnologías como C# - JAVA - C++, entre otros.
           </p>
-          <img src="./images/edit.svg" class="top__img__edit" onclick="changeText()">
+          <img src="./images/edit.svg" class="top__img__edit editable__element" onclick=changeText("parrafo")>
         </div>
         
       </section>
