@@ -81,78 +81,124 @@ body{
   margin-top:auto;
   max-width: 100%;
   height: auto;
+  padding: 5px;
 }
-/* Top Main-> Profile Pic - Background - Name - Introduction */
+/* Section1-> Profile Pic - Background - Name - Introduction */
+
+.wallpaPertop__comp{
+  padding:5px;
+  text-align: center;
+}
+
+.top__img__wallpaper{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 30px; 
+  vertical-align: bottom;
+
+}
 
 .top__img__edit{
   width: 25px;
   cursor: pointer;
 }
 
-.top__main{
-  margin: 0 auto;
-  width: 95vw;
-  height: 30vh;
-  padding: auto auto;
+.top__pic_name_intro{
+  margin: 5;
+  width: auto;
+  height: auto;
+  padding: 10px;
   align-items: center;
-  
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: auto;
   grid-column-gap: 1px;
-  grid-row-gap: 0px;
-
   border: 2px solid black;
   border-radius: 15px;
 }
 
-.top__img__wallpaper{
-  max-width: 100%;
-  height: auto;
-  border-radius: 30px; 
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-}
-
 .top__img__profile{
   width: 80%;
+  min-width: 150px;
   max-width: 200px;
   border-radius: 50%;
   padding: 5px 5px;
   position: relative;
-
 }
 
 .name__comp{
   align-items: center;
   vertical-align: middle;
+  padding: 10px;
 }
 .top__name{
   padding: 0 25px;
   text-size-adjust: auto;
   max-width: 10ch;
   text-overflow: ellipsis;
+  padding: 10px;
 }
 
 .introduction__comp{
-  /*
-  margin-left: auto;
-  margin-right: auto;
-  */
+  text-align: left;
+  border:5px solid red;
+  padding: 10px;
+
 }
 .top__introduction{
-  font-size : 17px;
-  text-size-adjust: 80%;
+  font-size : 2vw;
   
+  text-size-adjust: auto;
+  
+  padding: 5px;
+
 }
 
+/* Section2-> Job Experiences */
 
-/**Middle Main***/
-.middle__main{
+
+
+
+/*sections config*/
+.section1{
   margin: 0 auto;
-  width: 95vw;
-  height: 40vh;
+  width: auto;
+  height: auto;
+  padding: 5px;
   align-items: center;
   border:5px solid yellow;
+ 
+}
+.section2{
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  align-items: center;
+  border:5px solid yellow;
+}
+.section3{
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  align-items: center;
+  border:5px solid red;
+}
+.section4{
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  align-items: center;
+  border:5px solid blue;
+}
+.section5{
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  align-items: center;
+  border:5px solid green;
 }
