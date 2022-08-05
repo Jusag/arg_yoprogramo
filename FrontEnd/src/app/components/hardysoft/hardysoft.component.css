@@ -1,0 +1,24 @@
+.row{
+    padding: 15px;
+    background-color: rgb(228, 238, 250);
+}
+.sphereskill{
+    padding: 20px;
+    text-align: center;
+}
+#title-hys{
+    text-align: center;
+}
+.title-durasyblandas{
+    padding: 1px 40px;
+    text-align: center;
+}
+@media(max-width:575px){
+    .title-durasyblandas{
+        text-align: center;
+    }
+    .sphereskill{
+        text-align: center;
+    }
+
+}

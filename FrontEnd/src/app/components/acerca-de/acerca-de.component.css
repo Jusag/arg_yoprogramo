@@ -1,0 +1,39 @@
+div{
+    text-align: center;
+}
+.row{
+    padding: 5px;
+}
+.profilefacepic{
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px black;
+    left: 13px;
+}
+#nombre{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom:10px;
+    border-bottom:3px solid rgb(172, 205, 247);
+}
+#titulo{
+    font-weight: bold;
+}
+#acerca-de-mi-titulo{
+    font-weight: bold;
+}
+#acerca-de-mi-detallado{
+    font-weight: bold;
+}
+@media(min-width:576px){
+    .profilefacepic{
+        position:relative;
+        width:100%;
+        box-shadow: 3px 3px 3px black;
+        top:-100px;
+    }
+}
+@media(max-width:575px){
+    .profilefacepic{
+        width:45%;
+    }
+}
